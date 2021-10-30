@@ -22,10 +22,10 @@ def mediapipe_tensorflow():
         "https://github.com/tensorflow/tensorflow/archive/%s.tar.gz" % _TENSORFLOW_GIT_COMMIT,
         ],
         patches = [
-            "@//third_party:org_tensorflow_compatibility_fixes.diff",
-            "@//third_party:org_tensorflow_objc_cxx17.diff",
+            "@mediapipe//third_party:org_tensorflow_compatibility_fixes.diff",
+            "@mediapipe//third_party:org_tensorflow_objc_cxx17.diff",
             # Diff is generated with a script, don't update it manually.
-            "@//third_party:org_tensorflow_custom_ops.diff",
+            "@mediapipe//third_party:org_tensorflow_custom_ops.diff",
         ],
         patch_args = [
             "-p1",
